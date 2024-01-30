@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Ковтунов](https://up.htmlacademy.ru/htmlcss/39/user/2399439).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачёв](https://htmlacademy.ru/profile/angra).
 
 ---
 
