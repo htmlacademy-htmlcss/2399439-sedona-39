@@ -2,7 +2,7 @@
 
 * Студент: [Игорь Ковтунов](https://up.htmlacademy.ru/htmlcss/39/user/2399439).
 * Наставник: [Андрей Грачёв](https://htmlacademy.ru/profile/angra).
-
+* Сайт [Мой сайт Седона](https://igoryha96.github.io/sedona/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
