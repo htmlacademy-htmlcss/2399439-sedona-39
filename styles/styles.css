@@ -2,19 +2,19 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT Sans" sans-serif;
   font-weight: 400;
 
   font-size: 18px;
@@ -56,7 +56,7 @@ body {
 
 .main-hero {
   background-color: #ffffff;
-  background-image: url(../images/index-background.jpg);
+  background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -120,8 +120,6 @@ body {
   text-transform: uppercase;
 }
 
-
-
 .main-follow .subtitle,
 .text-subtitle-follow {
   color: #ffffff;
@@ -164,8 +162,6 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-
-
 
 /* Каталог */
 
