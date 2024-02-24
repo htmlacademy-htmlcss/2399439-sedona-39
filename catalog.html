@@ -41,7 +41,7 @@
     </header>
 
 
-    <main class="main-catalog">
+    <main class="main-catalog main-contener">
       <h1 class="visually-hidden">Каталог сайта</h1>
       <section class="filters">
         <h2 class="filters-title">Гостиницы Седоны</h2>
@@ -104,8 +104,17 @@
               </li>
             </ul>
           </fieldset>
-          <button class="filters-window-button action" type="submit">Применить</button>
-          <button class="filters-window-button" type="reset">Сбросить</button>
+          <fieldset class="filters-price-input">
+            <legend class="filters-title">Стоимость, ₽:</legend>
+            <label for="price-low" class="visually-hidden">От</label>
+            <input name="price-input" id="price-low" type="number" value="0">
+            <label for="price-high" class="visually-hidden">До</label>
+            <input name="price-input" id="price-high" type="number" value="9000">
+          </fieldset>
+          <div class="buttons-wrap">
+            <button class="filters-window-button action" type="submit">Применить</button>
+            <button class="filters-window-button" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
 
