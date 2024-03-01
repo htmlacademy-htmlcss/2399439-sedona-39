@@ -478,6 +478,7 @@ margin: 0;
   background-size: 100% auto;
   padding: 35px 70px 70px 70px;
   min-height: 412px;
+  margin-bottom: 56px;
 }
 
 .filters-title {
@@ -625,7 +626,6 @@ margin: 0;
   margin-right: 70px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .search-gallery-title {
@@ -637,11 +637,17 @@ margin: 0;
 }
 
 .select-control {
+  font-family: ;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   margin-left: auto;
+  font-family: "PT Sans", sans-serif ;
+  min-width: 292px;
+  padding: 14px 20px;
+  border-radius: 4px;
+  border-color: #E5E5E5;
 }
 
 .search-gallery-button-vievs {
@@ -649,28 +655,38 @@ margin: 0;
   list-style: none;
   padding-left: 0;
   margin-left: 70px;
+  font-family: "PT Sans", sans-serif ;
 }
 .catalog {
-  margin-bottom: 40px;
+  padding: 40px 70px 40px;
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
   margin: 0;
-  margin-left: 70px;
-  margin-right: 70px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
+
 .catalog-item {
   width: 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 19px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  gap: 16px;
+}
 
+.catalog-item img {
+  display: block;
+}
+.catalog-item p {
+  margin: 0;
 }
 
 .catalog-item-title {
@@ -680,9 +696,19 @@ margin: 0;
   color: #000000;
 }
 
-.catalog-item-price {
-  text-align: right;
+.catalog-tem-text {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
 }
+
+.catalog-item-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 
 .button {
   font-weight: 700;
@@ -693,21 +719,50 @@ margin: 0;
   color: #ffffff;
   border: none;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .catalog-item-button-detailed {
   background-color: #756157;
   text-decoration: none;
   color: #ffffff;
+  padding: 8px 26px;
 }
 
 .catalog-item-button-like {
   background-color: #82B3D3;
+  padding: 8px 18px;
+  width: 140px;
+  font-family: "PT Sans", sans-serif ;
 }
 
 .in-favorites {
-  border-color: #7DB54F;
+  background-color: #7DB54F;
   color: #ffffff;
+}
+
+.catalog-item-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.stars {
+  min-width: calc(18px * 5);
+  height: 17px;
+  background-image: url(../images/catalog-images/star.svg);
+  background-repeat: space;
+}
+
+.four-stars {
+  min-width: calc(18px * 4);
+}
+.three-stars {
+  min-width: calc(18px * 3);
+}
+.two-stars {
+  min-width: calc(18px * 2);
 }
 
 .score {
@@ -715,20 +770,28 @@ margin: 0;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 4px;
+  padding: 9px 22px;
+  background-color: #F2F2F2;
 }
 
+/* Пагинация */
+
 .paganation {
-  margin-bottom: 60px;
+  padding: 40px 70px 60px;
 }
 
 .paganation-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   list-style: none;
   padding-left: 0;
-
+  margin: 0;
 }
 
 .paganation-link {
+  display: block;
   background-color: #82B3D3;
   text-decoration: none;
   color: #ffffff;
@@ -736,12 +799,22 @@ margin: 0;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center
+  text-align: center;
+  min-width: 60px;
+  height: 60px;
+  padding: 12px 23px ;
+  border-radius: 4px;
 }
 
 .pagination-current {
   background-color: #F2F2F2;
 }
+
+.pagination-next {
+  background-color: #fff;
+  color: #000000;
+}
+
 .pagination-current {
   color: #000000;
 }
@@ -750,4 +823,48 @@ margin: 0;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.subscribe h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  margin: 0 auto;
+  margin-bottom: 54px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 475px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-form input{
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  background-color: #F2F2F2;
+  width: 452px;
+  padding: 14px 20px;
+  border-radius: 4px 0 0 4px;
+}
+
+.follow-button{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
 }
