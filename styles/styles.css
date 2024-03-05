@@ -60,7 +60,6 @@ body {
 
 .main-header {
   padding: 0 70px;
-  z-index: 1;
 }
 
 .main-header-navigation {
@@ -70,6 +69,11 @@ body {
   display: flex;
   align-items: center;
   }
+.main-header-navigation a{
+  margin-bottom: -6px;
+  z-index: 1;
+  }
+
 
   .main-header-logo {
     margin-right: 28px;
@@ -83,6 +87,11 @@ body {
   gap: 16px;
   padding-left: 0;
   margin: 0;
+  max-width: 450px;
+}
+.main-header-list a{
+  display: block;
+  padding: 20px 16px;
 }
 
 .main-header-navigation a {
@@ -94,9 +103,11 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  max-width: 300px;
   margin: 0;
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   padding-left: 0;
@@ -176,6 +187,7 @@ main h1, h2, h3{
   display: flex;
   align-items: center;
   min-height: 385px;
+
   }
 
 .transparent-bg {
@@ -215,10 +227,7 @@ main h1, h2, h3{
 
 .text-photo-wrapper {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 85px;
+  padding: 102px 85px;
 }
 
 .text-photo-wrapper h3::after {
@@ -239,10 +248,7 @@ main h1, h2, h3{
 
 .item-advantages-text-wrap {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 85px;
+  padding: 102px 85px;
 }
 .item-advantages-text-wrap h3 {
   margin: 0;
@@ -319,10 +325,7 @@ margin: 0;
 .main-advantages-list-service li {
   width: 400px;
   min-height: 385px;
-  padding: 0  85px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 81px  85px;
 }
 
 .main-advantages-list-service h3 {
@@ -634,6 +637,7 @@ margin: 0;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  max-width: 340px;
 }
 
 .select-control {
@@ -678,7 +682,7 @@ margin: 0;
   align-items: center; */
   display: grid;
   grid-template-columns: repeat(2,140px);
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr;
   gap: 20px;
   row-gap: 16px;
   padding: 19px;
@@ -700,6 +704,7 @@ margin: 0;
   line-height: 28px;
   color: #000000;
   grid-column: 1 / -1;
+  align-self: center;
 }
 
 .catalog-item-text {
@@ -805,7 +810,7 @@ margin: 0;
   text-align: center;
   min-width: 60px;
   height: 60px;
-  padding: 12px 23px ;
+  padding: 12px 18px ;
   border-radius: 4px;
 }
 
