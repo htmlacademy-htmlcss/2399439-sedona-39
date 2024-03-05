@@ -677,7 +677,8 @@ margin: 0;
   justify-content: center;
   align-items: center; */
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2,140px);
+  grid-template-rows: 1fr;
   gap: 20px;
   row-gap: 16px;
   padding: 19px;
@@ -701,17 +702,14 @@ margin: 0;
   grid-column: 1 / -1;
 }
 
+.catalog-item-text {
+  grid-column: 1 / 2;
+}
+
 .catalog-item-price {
   justify-self: end;
+  grid-column: 2 / 3;
 }
-
-.catalog-item-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 
 .button {
   font-weight: 700;
