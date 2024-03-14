@@ -99,6 +99,26 @@ body {
   text-decoration: none;
 }
 
+.main-header-item  {
+  position: relative;
+}
+.main-header-item a:hover,
+.main-header-item a:focus-visible {
+  color: #756157;
+}
+.main-header-item a:active{
+  color: #756157;
+  opacity: 0.3;
+}
+.current::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 68px;
+  border: 2px solid #756257;
+  bottom: -4px;
+}
+
 .main-header-list-user {
   font-size: 16px;
   line-height: 20px;
@@ -116,20 +136,70 @@ body {
   display: block;
 }
 
+.search-svg {
+  fill: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.search-svg:hover,
+.search-svg:focus-visible {
+  fill: #756157;
+}
+.search-svg:active{
+  color: #756157;
+  opacity: 0.3;
+}
+
+
+
 .serch-user {
-  background-image: url(../images/search.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   width: 44px;
   height: 64px;
+  position: relative;
 }
 
 .like-user {
-  background-image: url(../images/heart.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   width: 44px;
   height: 64px;
+  position: relative;
+}
+
+.like-svg {
+  fill: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+
+.like-svg:hover,
+.like-svg:focus-visible {
+  fill: #756157;
+}
+.like-svg:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.like {
+  border-radius: 50%;
+  background-color: #7DB54F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  top: 11px;
+  left: 22px;
+
 }
 
 .main-header-navigation .main-header-link {
@@ -142,6 +212,10 @@ body {
   border-radius: 4px;
   padding: 8px 34px;
   margin-left: 20px;
+}
+.main-header-navigation .main-header-link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Основное содержание */
@@ -369,6 +443,10 @@ margin: 0;
   border-radius: 4px;
   padding: 8px 50px;
 }
+.search-link:active {
+  background-color: #756157;
+  color: rgba(255,255,255, 0.3);
+}
 
 .main-follow .subtitle,
 .text-subtitle-follow {
@@ -396,6 +474,21 @@ margin: 0;
   line-height: 24px;
 }
 
+.main-follow-form {
+  display: flex;
+  justify-content: center;
+}
+
+.main-follow-form input{
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  background-color: #F2F2F2;
+  width: 452px;
+  padding: 14px 20px;
+  border-radius: 4px 0 0 4px;
+}
+
 .follow-button {
   background-color: #82B3D3;
   border: none;
@@ -404,6 +497,10 @@ margin: 0;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+}
+.follow-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Подвал */
@@ -433,29 +530,42 @@ margin: 0;
   padding: 11px 12px;
 }
 
-.vk {
-  background-image: url(../images/vk.svg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-}
-.telega {
-  background-image: url(../images/trlegram.svg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-    background-position: center;
-}
+.vk,
+.telega,
 .youtube {
-  background-image: url(../images/youtube.svg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-    background-position: center;
+  position: relative;
 }
 
+.vk-svg,
+.telega-svg,
+.youtube-svg {
+  fill: #83B3D3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.vk-svg:hover,
+.telega-svg:hover,
+.youtube-svg:hover {
+  fill: #68A2CA;
+
+}
+.vk-svg:focus-visible,
+.telega-svg:focus-visible,
+.youtube-svg:focus-visible {
+  fill: #68A2CA;
+}
+.vk-svg:active,
+.telega-svg:active,
+.youtube-svg:active {
+  opacity: 0.3;
+}
 
 .html-academy {
   margin-left: auto;
+
 }
 .html-academy img {
   display: block;
@@ -469,6 +579,19 @@ margin: 0;
   text-transform: uppercase;
   text-align: center;
   margin-left: auto;
+}
+.main-footer-tel:hover {
+  color: #756157;
+}
+.main-footer-tel:active {
+  opacity: 0.3;
+}
+
+.html-svg {
+  fill: #000000;
+}
+.html-svg:active {
+  opacity: 0.3;
 }
 
 /* Каталог */
@@ -682,7 +805,7 @@ margin: 0;
   align-items: center; */
   display: grid;
   grid-template-columns: repeat(2,140px);
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr repeat(2, min-content);
   gap: 20px;
   row-gap: 16px;
   padding: 19px;
@@ -704,7 +827,6 @@ margin: 0;
   line-height: 28px;
   color: #000000;
   grid-column: 1 / -1;
-  align-self: center;
 }
 
 .catalog-item-text {
