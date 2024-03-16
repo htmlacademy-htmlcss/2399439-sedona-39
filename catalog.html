@@ -80,21 +80,24 @@
               <legend class="filters-group-title">Инфраструктура</legend>
               <ul class="filters-group-list">
                 <li class="filters-group-item">
-                  <label>
-                    <input class="control-input" type="checkbox" checked>
-                    Бассейн
+                  <label class="cotrol">
+                    <input class="filters-group-control-input visually-hidden" type="checkbox" checked>
+                    <span class="filters-group-control-mark"></span>
+                    <span>Бассейн</span>
                   </label>
                 </li>
                 <li class="filters-group-item">
-                  <label>
-                    <input class="control-input" type="checkbox" checked>
-                    Парковка
+                  <label class="cotrol">
+                    <input class="filters-group-control-input visually-hidden" type="checkbox" name="bas" checked>
+                    <span class="filters-group-control-mark"></span>
+                    <span>Парковка</span>
                   </label>
                 </li>
                 <li class="filters-group-item">
-                  <label>
-                    <input class="control-input" type="checkbox">
-                    Wi-Fi
+                  <label class="cotrol">
+                    <input class="filters-group-control-input visually-hidden" type="checkbox" disabled>
+                    <span class="filters-group-control-mark"></span>
+                    <span>Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -125,14 +128,26 @@
             </fieldset>
             <fieldset class="filters-price-input">
               <legend class="filters-group-title">Стоимость, ₽:</legend>
-              <label for="price-low" class="visually-hidden">От</label>
-              <input class="inp-price" name="price-input" id="price-low" type="number" value="0">
-              <label for="price-high" class="visually-hidden">До</label>
-              <input class="inp-price for" name="price-input" id="price-high" type="number" value="9000">
+              <div class="filters-price-input-wraper">
+                <label class="price-low" for="price-low">От</label>
+                <input class="inp-price" name="price-input" id="price-low" type="number" value="0">
+                <label class="price-height" for="price-high">До</label>
+                <input class="inp-price for" name="price-input" id="price-high" type="number" value="9000">
+              </div>
+              <div class="range">
+                <div class="range-bar" style="left: 0; width: 226px;">
+                  <button>
+                    <span class="visually-hidden">Изменить минимальную стоимость</span>
+                  </button>
+                  <button>
+                    <span class="visually-hidden">Изменить максимальную стоимость</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
             <div class="buttons-wrap">
               <button class="filters-window-button action" type="submit">Применить</button>
-              <button class="filters-window-button" type="reset">Сбросить</button>
+              <button class="filters-window-button reset-hover" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
