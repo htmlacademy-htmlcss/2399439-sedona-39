@@ -51,7 +51,7 @@
               </a>
             </li>
             <li class="main-header-list-user-item">
-              <a class="main-header-link" href="#">Хочу сюда</a>
+              <a class="main-header-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -242,7 +242,7 @@
     <div class="modal shadow">
       <div class="modal-content">
         <h2>Поиск гостиницы в седоне</h2>
-        <button class="modal-close">
+        <button class="modal-close" type="button">
           <svg class="modal-close-swg" width="15" height="15" viewBox="0 0 15 15" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -252,11 +252,12 @@
         <form action="https://echo.htmlacademy.ru/courses" method="get">
           <fieldset class="modal-long">
             <label class="modal-form-title">
-              Дата Заезда:
+              <span class="date-comin">Дата Заезда:</span>
               <input type="text" class="modal-date" value="27 апреля 2020" placeholder="Укажите дату"
                 name="Дата заезда">
             </label>
-            <button class="modal-calendar =" type="button">
+            <button class="modal-calendar" type="button">
+              <span class="visually-hidden">Кнопка календаря</span>
               <svg class="modal-calendar-swg" width="16" height="15" viewBox="0 0 16 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -284,12 +285,13 @@
             <span class="modal-text eror">Мы не можем отправить вас в прошлое.</span>
           </fieldset>
           <fieldset class="modal-long">
-            <label class="modal-form-title">
-              Дата Выезда:
+            <label class="modal-form-title out">
+              <span class="date-out">Дата Выезда:</span>
               <input type="text" class="modal-date" value="1 сентября 2023" placeholder="Укажите дату"
                 name="Дата выезда">
             </label>
             <button class="modal-calendar" type="button">
+              <span class="visually-hidden">Кнопка календаря</span>
               <svg class="modal-calendar-swg" width="16" height="15" viewBox="0 0 16 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -322,17 +324,11 @@
                 Взрослые:
                 <div class="people-button-wrap">
                   <button class="button-minus" type="button">
-                    <svg class="minus-swg" width="14" height="2" viewBox="0 0 14 2" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" />
-                    </svg>
+                    <span class="visually-hidden">уменьшить</span>
                   </button>
                   <input type="number" value="23" name="Кол-во взрослых">
                   <button class="button-plus" type="button">
-                    <svg class="plus-swg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                    </svg>
+                    <span class="visually-hidden">увеличить</span>
                   </button>
                 </div>
               </label>
@@ -355,17 +351,11 @@
                 </div>
                 <div class="people-button-wrap">
                   <button class="button-minus" type="button">
-                    <svg class="minus-swg" width="14" height="2" viewBox="0 0 14 2" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" />
-                    </svg>
+                    <span class="visually-hidden">увеличить</span>
                   </button>
                   <input type="number" value="2" name="Кол-во детей">
                   <button class="button-plus" type="button">
-                    <svg class="plus-swg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                    </svg>
+                    <span class="visually-hidden">увеличить</span>
                   </button>
                 </div>
               </label>
