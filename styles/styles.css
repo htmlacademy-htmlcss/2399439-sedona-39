@@ -130,6 +130,7 @@ body {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   list-style: none;
   align-items: center;
   padding-left: 0;
@@ -487,7 +488,7 @@ margin: 0;
   background-color: #000000;
   background-image: url(../images/follow-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   padding: 100px 0;
 }
 
@@ -1313,8 +1314,8 @@ opacity: 0.6;
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2;
+  background: rgba(242, 242, 242, 0.8);
+    z-index: 2;
 
 }
 .modal input {
@@ -1322,12 +1323,13 @@ opacity: 0.6;
 }
 .modal-content {
   width: 717px;
-  min-height: 576px;
+  height: 576px;
   border-radius: 30px;
   background-color: #ffffff;
-  padding: 64px 70px;
-  margin: auto;
+  padding: 65px 69px;
+  margin: 396px auto;
   position: relative;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 .modal-close {
   position: absolute;
@@ -1374,7 +1376,7 @@ opacity: 0.6;
 
 .modal-long {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   position: relative;
   border: none;
   padding: 0;
@@ -1457,13 +1459,11 @@ opacity: 0.6;
   border: none;
   padding: 0;
   margin: 0;
-  width: 247px;
   display: flex;
   align-items: center;
 }
 .people-senior {
   display: flex;
-  width: 247px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
@@ -1482,7 +1482,6 @@ opacity: 0.6;
   width: 40px;
   height: 48px;
   cursor: pointer;
-  background-color: none;
 }
 
 .button-minus{
@@ -1493,14 +1492,14 @@ opacity: 0.6;
   display: block;
   margin: auto;
   mask-image: url(../images/modal/minus-modal.svg);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(117, 97, 87, 0.3);
   height: 2px;
   width: 14px;
 }
 
 .button-minus:hover::before,
 .button-minus:focus-visible::before {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .button-plus {
@@ -1513,13 +1512,13 @@ opacity: 0.6;
   width: 14px;
   height: 14px;
   mask-image: url(../images/modal/plus-modal.svg);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(117, 97, 87, 0.3);
   margin: auto;
 }
 
 .button-plus:hover::before,
 .button-plus:focus-visible::before {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .people-button-wrap input{
@@ -1543,8 +1542,6 @@ opacity: 0.6;
 .people-children {
   display: flex;
   align-items: center;
-  width: 242px;
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;

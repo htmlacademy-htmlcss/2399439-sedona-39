@@ -321,45 +321,45 @@
           </fieldset>
           <div class="people-wrap">
             <fieldset>
-              <label class="people-senior">
+              <label for="amount" class="people-senior">
                 Взрослые:
-                <div class="people-button-wrap">
-                  <button class="button-minus" type="button">
-                    <span class="visually-hidden">уменьшить</span>
-                  </button>
-                  <input type="number" value="23" name="Кол-во взрослых">
-                  <button class="button-plus" type="button">
-                    <span class="visually-hidden">увеличить</span>
-                  </button>
-                </div>
               </label>
+              <div class="people-button-wrap">
+                <button class="button-minus" type="button">
+                  <span class="visually-hidden">уменьшить</span>
+                </button>
+                <input id="amount" type="number" value="23" name="Кол-во взрослых">
+                <button class="button-plus" type="button">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
+              </div>
             </fieldset>
             <fieldset>
-              <label for="" class="people-children">
+              <label for="amont-children" class="people-children">
                 Дети:
-                <button type="button" class="people-info">
-                  <svg class="info-swg" width="2" height="12" viewBox="0 0 2 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
-                  </svg>
-                </button>
-                <div class="infiorm-block">
-                  <p class="infiorm-block-text">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет
-                    размещаются
-                    бесплатно.
-                  </p>
-                </div>
-                <div class="people-button-wrap">
-                  <button class="button-minus" type="button">
-                    <span class="visually-hidden">увеличить</span>
-                  </button>
-                  <input type="number" value="2" name="Кол-во детей">
-                  <button class="button-plus" type="button">
-                    <span class="visually-hidden">увеличить</span>
-                  </button>
-                </div>
               </label>
+              <button type="button" class="people-info">
+                <svg class="info-swg" width="2" height="12" viewBox="0 0 2 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
+                </svg>
+              </button>
+              <div class="infiorm-block">
+                <p class="infiorm-block-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети <br> до 6 лет
+                  размещаются
+                  бесплатно.
+                </p>
+              </div>
+              <div class="people-button-wrap">
+                <button class="button-minus" type="button">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
+                <input id="amont-children" type="number" value="2" name="Кол-во детей">
+                <button class="button-plus" type="button">
+                  <span class="visually-hidden">увеличить</span>
+                </button>
+              </div>
             </fieldset>
           </div>
           <button class="people-serch" type="submit">Найти</button>
