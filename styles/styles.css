@@ -976,6 +976,11 @@ opacity: 0.6;
   background-color: #68a2ca;
 }
 
+.action:disabled {
+  background-color: #e5e5e5;
+  pointer-events: none;
+}
+
 /* Галлерея гостиниц */
 
 .search-gallery {
@@ -1329,6 +1334,11 @@ opacity: 0.6;
   text-align: center;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+  pointer-events: none;
 }
 
 /* Модальное окно */
