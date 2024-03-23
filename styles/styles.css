@@ -218,16 +218,16 @@ body {
   margin-left: 20px;
   width: 160px;
 }
+.main-header-navigation .main-header-link:hover,
+.main-header-navigation .main-header-link:focus-visible {
+  background-color: #615048;
+}
 .main-header-navigation .main-header-link:active {
-  background-color: #756157;
+  background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
 }
 
 /* Основное содержание */
-
-main h1, h2, h3{
-  margin: 0;
-}
 
 .main-hero {
   background-color: #ffffff;
@@ -287,6 +287,7 @@ main h1, h2, h3{
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
   margin-bottom: 25px;
 }
 .subtitle-down {
@@ -380,6 +381,7 @@ margin: 0;
 }
 
 .main-advantages-list-service h3 {
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -459,6 +461,9 @@ margin: 0;
   margin: 0 auto;
   width: 376px;
 }
+.search-link:hover {
+  background-color: #615048;
+}
 .search-link:active {
   background-color: #756157;
   color: rgba(255,255,255, 0.3);
@@ -473,11 +478,12 @@ margin: 0;
 }
 
 .text-subtitle-follow {
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .main-follow .main-follow-subtitle {
   font-size: 30px;
+  margin-bottom: 26px;
 }
 
 .main-follow {
@@ -489,7 +495,7 @@ margin: 0;
   background-image: url(../images/follow-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 100px 0 105px 0;
 }
 
 .main-follow-email {
@@ -525,6 +531,10 @@ margin: 0;
   text-transform: uppercase;
   font-family: inherit;
 }
+.follow-button:hover,
+.follow-button:focus-visible {
+  background-color: #68a2ca;
+}
 .follow-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
@@ -548,13 +558,13 @@ margin: 0;
   align-items: center;
   gap: 26px;
   padding: 0 10px;
-  max-width: calc(47px*5);
+  width: 142px;
 }
 .footer-social-list a{
   display: block;
   width: 18px;
   height: 15px;
-  padding: 11px 12px;
+  padding: 7px 11px;
 }
 
 .vk,
@@ -639,13 +649,14 @@ margin: 0;
   background-color: #333333;
   background-image: url(../images/catalog-images/filter-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   padding: 35px 70px 70px 70px;
   min-height: 412px;
   margin-bottom: 48px;
 }
 
 .filters-title {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -822,15 +833,15 @@ transform: translateY(-50%);
   display: flex;
   align-items: center;
 }
-.filters-group-list label:hover .filters-group-control-mark {
+
+.filters-group-item:hover {
 opacity: 0.6;
 }
 
-.filters-group-control-input[type="checkbox"]:checked + .filters-group-control-mark {
+.filters-group-control-input:checked + .filters-group-control-mark {
   background-image: url(../images/catalog-images/checkbos.svg);
   background-position: center;
   background-repeat: no-repeat;
-  outline: 3px solid #83B3D3;
 }
 
 .filters-group-control-input:focus-visible + .filters-group-control-mark {
@@ -908,9 +919,12 @@ opacity: 0.6;
 .inp-price {
   border: none;
   padding: 0;
-  padding: 12px 20px;
+  padding: 12px 45px 12px 20px;
   width: 143px;
   border-radius: 4px 0 0 4px;
+}
+.inp-price:hover {
+  background-color: #e6e6e6;
 }
 
 .for {
@@ -957,6 +971,9 @@ opacity: 0.6;
 
 .action {
   background-color: #82B3D3;
+}
+.action:hover {
+  background-color: #68a2ca;
 }
 
 /* Галлерея гостиниц */
@@ -1059,8 +1076,8 @@ opacity: 0.6;
   border: 2px solid #000000;
 }
 
-.catalog{
-  padding: 40px 70px 40px;
+.catalog {
+  padding: 38px 70px 44px;
 }
 
 .catalog-list {
@@ -1093,6 +1110,7 @@ opacity: 0.6;
 }
 
 .catalog-item-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1157,6 +1175,9 @@ opacity: 0.6;
 .in-favorites {
   background-color: #7DB54F;
   color: #ffffff;
+}
+.in-favorites:hover {
+  background-color: #6c9e42;
 }
 
 .catalog-item-rating {
@@ -1261,6 +1282,7 @@ opacity: 0.6;
 }
 
 .subscribe h2 {
+  margin: 0;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -1293,6 +1315,10 @@ opacity: 0.6;
   padding: 14px 20px;
   border-radius: 4px 0 0 4px;
   font-family: inherit;
+}
+.subscribe-form input:hover,
+.subscribe-form input:hover {
+  background-color: #e6e6e6;
 }
 
 .follow-button{
@@ -1330,6 +1356,9 @@ opacity: 0.6;
   margin: 396px auto;
   position: relative;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+.modal-content h2{
+  margin: 0;
 }
 .modal-close {
   position: absolute;
@@ -1464,7 +1493,6 @@ opacity: 0.6;
 }
 .people-senior {
   display: flex;
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1501,6 +1529,9 @@ opacity: 0.6;
 .button-minus:focus-visible::before {
   background-color: rgba(0, 0, 0, 1);
 }
+.button-minus:active::before {
+  background-color: rgba(117, 97, 87, 0.3);
+}
 
 .button-plus {
   border-radius:  0 4px 4px 0 ;
@@ -1520,6 +1551,15 @@ opacity: 0.6;
 .button-plus:focus-visible::before {
   background-color: rgba(0, 0, 0, 1);
 }
+.button-plus:active::before {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.people-button-wrap:hover .button-minus,
+.people-button-wrap:hover input,
+.people-button-wrap:hover .button-plus{
+  background-color: #E6E6E6;
+}
 
 .people-button-wrap input{
   border: none;
@@ -1533,6 +1573,10 @@ opacity: 0.6;
   color: #000000;
   font-family: inherit;
   background-color: #F2F2F2;
+}
+.people-button-wrap input:focus-visible,
+.people-button-wrap input:active {
+  background-color: #E6E6E6;
 }
 .people-button-wrap input::-webkit-outer-spin-button,
 .people-button-wrap input::-webkit-inner-spin-button{
@@ -1565,6 +1609,13 @@ opacity: 0.6;
   margin-left: 10px;
   position: relative;
   cursor: pointer;
+}
+.people-info:hover,
+.people-info:focus-visible {
+  background-color: #68a2ca;
+}
+.people-info:active {
+  background-color: #68a2ca;
 }
 
 .people-serch {
