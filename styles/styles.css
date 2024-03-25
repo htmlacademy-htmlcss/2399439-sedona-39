@@ -1553,7 +1553,7 @@ opacity: 0.6;
 
 .button-minus{
   border-radius: 4px 0 0 4px ;
-  background-color: #F2F2F2;
+  background: #F2F2F2;
 }
 .button-minus::before {
   content: "";
@@ -1575,7 +1575,7 @@ opacity: 0.6;
 
 .button-plus {
   border-radius:  0 4px 4px 0 ;
-  background-color: #F2F2F2;
+  background: #F2F2F2;
 }
 
 .button-plus::before {
