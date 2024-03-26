@@ -796,6 +796,17 @@ body {
   cursor: pointer;
   border: none;
 }
+.range-bar button:hover,
+.range-bar button:focus-visible {
+  outline: #83b3d3 3px solid;
+}
+.range-bar button:active {
+  opacity: 0.9;
+  outline: #83b3d3 3px solid;
+}
+.range-bar button:disabled {
+  pointer-events: none;
+}
 .range-bar button:first-child {
 position: absolute;
 left: 0;
